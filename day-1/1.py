@@ -1,0 +1,1 @@
+print(max([sum([int(y) for y in x.split(",")]) for x in ",".join([l.strip() for l in open ("input.txt", "r").readlines()]).split(",,")]))
