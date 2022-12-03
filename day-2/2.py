@@ -1,0 +1,1 @@
+print(sum([line[1] * 3 + (line[1] + 1 if line[0] == 1 else (line[1] - 1) % 3 + 1 if line[0] == 0 else (line[1] - 2) % 3 + 1) for line in [[{'A': 0, 'B': 1, 'C': 2, 'X': 0, 'Y': 1, 'Z': 2}[x] for x in line.strip().split(" ")] for line in open("input.txt", "r").readlines()]]))

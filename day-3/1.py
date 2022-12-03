@@ -1,0 +1,1 @@
+print(sum(["_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".index([c for c in l[:len(l) // 2] if c in l[len(l) // 2:]][0]) for l in [line.strip() for line in open("input.txt", "r").readlines()]]))
